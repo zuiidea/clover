@@ -1,0 +1,63 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  background-color: #34495e;
+  position: relative;
+  .box {
+    width: 30rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -11.25rem;
+    left: 50%;
+    margin-left: -15rem;
+    height: 22.5rem;
+    & > div {
+      margin-left: auto;
+      margin-right: auto;
+      background-size: cover;
+      display: block;
+    }
+  }
+  .logo {
+    background-image: url("../assets/logo.png");
+    width: 10rem;
+    height: 12.5rem;
+  }
+  .slogan {
+    background-image: url("../assets/slogan.png");
+    width: 30rem;
+    height: 3rem;
+    margin-top: 2rem;
+  }
+  .clover {
+    background-image: url("../assets/clover.png");
+    width: 15rem;
+    height: 5rem;
+  }
+}
+.animated {
+  animation-duration: 0.5s;
+  &.delay-1 {
+    animation-delay: 0.1s;
+  }
+  &.delay-2 {
+    animation-delay: 0.15s;
+  }
+  &.delay-3 {
+    animation-delay: 0.2s;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fade-in-bottom {
+  animation-name: fade-in-bottom;
+  animation-timing-function: ease-out;
+}
