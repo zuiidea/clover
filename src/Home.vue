@@ -1,12 +1,18 @@
 <template>
   <div class="home">
     <div class="box">
-      <div class="logo fade-in-bottom delay-1">
+      <div class="logo animated fadeInUp">
       </div>
-      <div class="clover fade-in-bottom delay-2">
+      <div class="clover animated fadeInUp delay-1">
       </div>
-      <div class="slogan fade-in-bottom delay-3">
+      <div class="slogan animated fadeInUp delay-2">
       </div>
+    </div>
+    <div class="footer">
+      <p>
+        <span>版本：0.1</span>
+      </p>
+      <iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=zuiidea&repo=clover&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
     </div>
   </div>
 </template>

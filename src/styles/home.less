@@ -3,10 +3,31 @@
   height: 100vh;
   background-color: #34495e;
   position: relative;
+  overflow: hidden;
+  font: 14px/1.5 arial, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+  .footer {
+    position: absolute;
+    bottom: 48px;
+    width: 100%;
+    text-align: center;
+    color: #ccc;
+    .github-btn {
+      position: absolute;
+      left: 50%;
+      margin-left: -40px;
+      border: none;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      height: 48px;
+      line-height: 48px;
+    }
+  }
   .box {
     width: 30rem;
     position: absolute;
-    top: 50%;
+    top: 40%;
     margin-top: -11.25rem;
     left: 50%;
     margin-left: -15rem;
@@ -36,28 +57,25 @@
   }
 }
 .animated {
-  animation-duration: 0.5s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
   &.delay-1 {
-    animation-delay: 0.1s;
-  }
-  &.delay-2 {
     animation-delay: 0.2s;
   }
-  &.delay-3 {
-    animation-delay: 0.3s;
+  &.delay-2 {
+    animation-delay: 0.4s;
   }
 }
-@keyframes fade-in-bottom {
-  0% {
+@keyframes fadeInUp {
+  from {
     opacity: 0;
-    transform: translateY(200px);
+    transform: translate3d(0, 100%, 0);
   }
-  100% {
+  to {
     opacity: 1;
     transform: none;
   }
 }
-.fade-in-bottom {
-  animation-name: fade-in-bottom;
-  animation-timing-function: ease-out;
+.fadeInUp {
+  animation-name: fadeInUp;
 }
