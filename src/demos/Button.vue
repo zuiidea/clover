@@ -1,13 +1,14 @@
 <template>
   <div class="button">
     <a href="/home">按钮666</a>
-    <c-button type="warn">66</c-button>
+    <c-button type="warn">按钮</c-button>
   </div>
 </template>
 
 <script>
  import { CButton } from '../components'
  export default {
+   name: 'button',
    components: {
      CButton
    },
