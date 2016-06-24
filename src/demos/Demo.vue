@@ -1,6 +1,7 @@
 <template>
   <div class="button">
-    <a href="component/button">按钮</a>
+    <a v-link="{ path: '/component/button' }">Button</a>
+    <a v-link="{ path: '/home' }">Home</a>
   </div>
 </template>
 
@@ -13,6 +14,6 @@
 
 <style scoped lang="less">
  .button{
-   background-color: #666;
+  //  background-color: #666;
  }
 </style>
