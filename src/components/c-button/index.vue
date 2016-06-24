@@ -1,7 +1,12 @@
 <template>
-  <c-button class="weui_btn" :class="classes" :disabled="disabled">
-    {{text}}
-  </c-button>
+  <button
+    class="button"
+    :class="['button-' + type, 'button-' + size, {
+        'is-disabled': disabled,
+        'is-plain': plain
+      }]"
+    @touchstart="handleClick">
+  </button>
 </template>
 
 <script>
@@ -27,7 +32,7 @@ export default {
 }
 </script>
 <style media="screen">
-@component button {
+.button {
   appearance: none;
   border-radius: 4px;
   border: 0;

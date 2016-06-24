@@ -1,15 +1,15 @@
 <template>
   <div class="button">
     <a href="/home">按钮666</a>
-    <button type="warn">66</button>
+    <c-button type="warn">66</c-button>
   </div>
 </template>
 
 <script>
- import { Button } from '../components'
+ import { CButton } from '../components'
  export default {
    components: {
-     Button
+     CButton
    },
    methods: {
      change (value) {

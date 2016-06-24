@@ -1,10 +1,10 @@
 /* only for building vux.css */
 import Style from '../styles/index.vue' // eslint-disable-line
 
-import Button from './button'
+import CButton from './c-button'
 
 const vux = {
-  Button
+  CButton
 }
 
 module.exports = vux
