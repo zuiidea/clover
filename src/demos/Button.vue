@@ -1,7 +1,6 @@
 <template>
-  <div class="button">
-    <a href="/home">按钮666</a>
-    <c-button type="warn">按钮</c-button>
+  <div class="card">
+    <c-button type="default">按钮</c-button>
   </div>
 </template>
 
@@ -29,3 +28,8 @@
    }
  }
 </script>
+<style lang="less">
+.card{
+  padding: 24px;
+}
+</style>
