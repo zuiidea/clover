@@ -1,7 +1,5 @@
-// this component is used only for building vux.css
+// this component is used only for building clover.css
 <style lang="less">
-@import './themes/default/index.less';
-@import './mixins/index.less';
-@import './core/index.less';
-@import './components/index.less';
+@import './core/index';
+@import './components/index';
 </style>

@@ -1,48 +1,56 @@
 <template>
-  <button
-    class="button"
-    :class="['button-' + type, 'button-' + size, {
-        'is-disabled': disabled,
-        'is-plain': plain
-      }]"
-    @touchstart="handleClick">
-    <span class="button-icon">
-      <slot name="icon">
-        <i v-if="icon" class="mintui" :class="'mintui-' + icon"></i>
-      </slot>
-    </span>
-    <label class="button-text"><slot></slot></label>
-  </button>
+  <a href="javascript:;"
+  class="button" :class="classes" :disabled="disabled"
+  @touchstart="handleClick">
+    <slot></slot>
+  </a>
 </template>
 
 <script>
 export default {
-  name: 'mt-button',
   props: {
-    icon: String,
-    disabled: Boolean,
-    plain: Boolean,
-    type: {
+    color: {
       type: String,
-      default: 'default',
-      validator (value) {
-        return [
-          'default',
-          'danger',
-          'primary'
-        ].indexOf(value) > -1
-      }
+      default: ''
     },
-    size: {
-      type: String,
-      default: 'normal',
-      validator (value) {
-        return [
-          'small',
-          'normal',
-          'large'
-        ].indexOf(value) > -1
-      }
+    small: {
+      type: Boolean,
+      default: false
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    fill: {
+      type: Boolean,
+      default: false
+    },
+    radius: {
+      type: Boolean,
+      default: false
+    },
+    fluid: {
+      type: Boolean,
+      default: false
+    },
+    icon: {
+      type: Boolean,
+      default: false
+    }
+  },
+  computed: {
+    classes () {
+      return [
+        {
+          'disabled': this.disabled,
+          'button-fill': this.fill,
+          'button-small': this.small,
+          'button-radius': this.radius,
+          'button-fluid': this.fluid,
+          'button-icon': this.icon
+        },
+        this.color ? `button-${this.color}` : ''
+      ]
     }
   },
   methods: {
