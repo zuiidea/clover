@@ -1,6 +1,6 @@
 @import "../core/index";
 /* === Lists === */
-@listBlockBorderColor: rgba(0,0,0,0.1);
+@listBlockBorderColor: rgba(0,0,0,0.2);
 .list-block {
     margin: 32px 0;
     font-size: 14px;
@@ -11,6 +11,9 @@
         position: relative;
         .hairline(top, @listBlockBorderColor);
         .hairline(bottom, @listBlockBorderColor);
+        &::after{
+          background-color: rgba(0,0,0,0.1);
+        }
         ul {
             .hairline-remove(top);
             .hairline-remove(bottom);
@@ -58,6 +61,7 @@
     li {
         box-sizing:border-box;
         position: relative;
+        .hairline(bottom, @listBlockBorderColor);
     }
 
     .item-media {
@@ -77,16 +81,15 @@
         }
     }
     .item-media + .item-inner {
-        margin-left: 16px;
+        margin-left: 12px;
     }
     .item-inner {
         padding-right: 16px;
         position: relative;
-        .hairline(bottom, @listBlockBorderColor);
         width: 100%;
         padding-top: 8px;
         padding-bottom: 8px;
-        min-height: 48px;
+        min-height: 51px;
         box-sizing:border-box;
         -webkit-box-flex:1;
         -ms-flex:1;
@@ -108,12 +111,12 @@
 
     .item-after {
         white-space: nowrap;
-        color: #757575;
+        color: shade(transparent, 60%);
         .flex-shrink(0);
         margin-left: 8px;
         .flexbox();
         max-height: 28px;
-        font-size: 14px;
+        font-size: 12px;
     }
     .smart-select .item-after, .autocomplete-opener .item-after {
         max-width: 70%;
@@ -138,20 +141,20 @@
             background-position: calc(~"100% - 16px") center;
             background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWwpAZm9udC1mYWNlIHsgZm9udC1mYW1pbHk6IGlmb250OyBzcmM6IHVybCgiaHR0cDovL2F0LmFsaWNkbi5jb20vdC9mb250XzE0NDIzNzM4OTZfNDc1NDQ1NS5lb3Q/I2llZml4IikgZm9ybWF0KCJlbWJlZGRlZC1vcGVudHlwZSIpLCB1cmwoImh0dHA6Ly9hdC5hbGljZG4uY29tL3QvZm9udF8xNDQyMzczODk2XzQ3NTQ0NTUud29mZiIpIGZvcm1hdCgid29mZiIpLCB1cmwoImh0dHA6Ly9hdC5hbGljZG4uY29tL3QvZm9udF8xNDQyMzczODk2XzQ3NTQ0NTUudHRmIikgZm9ybWF0KCJ0cnVldHlwZSIpLCB1cmwoImh0dHA6Ly9hdC5hbGljZG4uY29tL3QvZm9udF8xNDQyMzczODk2XzQ3NTQ0NTUuc3ZnI2lmb250IikgZm9ybWF0KCJzdmciKTsgfQoKXV0+PC9zdHlsZT48L2RlZnM+PGcgY2xhc3M9InRyYW5zZm9ybS1ncm91cCI+PGcgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSwgMC4wMTU2MjUpIj48cGF0aCBkPSJNMzA4Ljk4MjcwMiA5MDYuMDkyNjEzYzIuNDg2NjM0IDAgNC45NzYzMzgtMC45MDE1MzMgNi45NDUxNzktMi43MjE5OTRMNzI1LjE5MTAwOCA1MjQuODE1ODg3YzQuMTQ4NDgzLTMuODM3Mzk4IDQuNDAxMjQtMTAuMzExODU3IDAuNTYzODQyLTE0LjQ2MTM2My0zLjgzODQyMi00LjE0NzQ2LTEwLjMxMTg1Ny00LjQwMTI0LTE0LjQ2MTM2My0wLjU2Mzg0MmwtNDA5LjI2MTA4MSAzNzguNTU2Nzc5Yy00LjE0OTUwNyAzLjgzNzM5OC00LjQwMTI0IDEwLjMxMjg4LTAuNTYzODQyIDE0LjQ2MDM0QzMwMy40ODQ0NzggOTA0Ljk4NzQ0MyAzMDYuMjMxMDMxIDkwNi4wOTI2MTMgMzA4Ljk4MjcwMiA5MDYuMDkyNjEzek03MTguNjY5NDc4IDUyMy43OTY2NzRjMi43MzkzOTEgMCA1LjQ3MTYxOC0xLjA5Mjg5MSA3LjQ4NjUwOC0zLjI1NDExNCAzLjg1Mzc3MS00LjEzNDE1NyAzLjYyNzYyLTEwLjYwODYxNS0wLjUwNTUxMy0xNC40NjM0MUwzMTIuMzA0MzU0IDEyMC42NTQ5NjRjLTQuMTMzMTM0LTMuODUyNzQ4LTEwLjYwNjU2OS0zLjYyNzYyLTE0LjQ2MjM4NyAwLjUwNTUxMy0zLjg1Mzc3MSA0LjEzNDE1Ny0zLjYyNzYyIDEwLjYwODYxNSAwLjUwNTUxMyAxNC40NjM0MUw3MTEuNjkyNTc2IDUyMS4wNDgwNzNDNzEzLjY2NDQ4NyA1MjIuODg1OTMxIDcxNi4xNjk1NDEgNTIzLjc5NjY3NCA3MTguNjY5NDc4IDUyMy43OTY2NzR6IiBmaWxsPSIjYWRhZGFkIj48L3BhdGg+PC9nPjwvZz48L3N2Zz4=);
         }
-        html:not(.watch-active-state) &:active, &.active-state {
-            background-color: rgba(0,0,0,0.1);
+        &:active, &.active-state {
+            background-color: rgba(0,0,0,0.05);
         }
         &.list-button {
             padding: 0 16px;
             font-size: 16px;
             display: block;
-            line-height: 48px;
+            line-height: 51px;
         }
     }
     .item-content {
         box-sizing:border-box;
         padding-left: 16px;
-        min-height: 48px;
+        min-height: 51px;
         .flexbox();
         .justify-content(space-between);
         .align-items(center);
@@ -308,9 +311,9 @@
         text-overflow: ellipsis;
         overflow: hidden;
         color: rgba(0,0,0,0.54);
-        height: 48px;
+        height: 51px;
         box-sizing: border-box;
-        line-height: 48px;
+        line-height: 51px;
         font-size: 14px;
     }
     .list-group-title {

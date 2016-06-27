@@ -71,8 +71,7 @@ export default function () {
   }
 
   // Add html classes
-  if (classNames.length > 0) document.getElementsByTagName('body').className = classNames.join(' ')
-  console.log(document.getElementsByTagName('body'), classNames)
+  if (classNames.length > 0) document.getElementById('app').className = classNames.join(' ')
 
   // Export object
   return device
