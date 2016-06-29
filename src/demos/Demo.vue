@@ -45,6 +45,23 @@
         </li>
       </ul>
       <div class="content-block-title">
+        Page
+      </div>
+      <ul>
+        <li>
+          <a v-link="{ path: '/component/navbar' }" class="item-link">
+            <div class="item-content">
+              <div class="item-media icon-media bg-cyan">
+                <Icon type="star"></Icon>
+              </div>
+              <div class="item-inner">
+                <div class="item-title">顶部 Navbar</div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="content-block-title">
         Form Control <span style="font-size:12px;margin-left:16px;">开发中...</span>
       </div>
       <div class="list-block not-open">
