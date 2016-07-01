@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <div class="navbar" :class="classes">
     <div class="navbar-inner">
       <div class="left">
         <i class="icon icon-back"></i>
@@ -13,7 +13,24 @@
 <script>
 export default {
   props: {
-    type: String
+    type: {
+      type: String,
+      default: ''
+    },
+    back: {
+      type: Boolean,
+      default: false
+    }
+  },
+  computed: {
+    classes () {
+      return [
+        {
+          'navbar-back': this.back
+        },
+        this.type ? `navbar-${this.type}` : ''
+      ]
+    }
   }
 }
 </script>
