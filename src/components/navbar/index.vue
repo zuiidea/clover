@@ -2,10 +2,15 @@
   <div class="navbar" :class="classes">
     <div class="navbar-inner">
       <div class="left">
-        <i class="icon icon-back"></i>
+        <slot name="left"></slot>
       </div>
-      <div class="center">字体详情</div>
-      <div class="right"></div>
+      <div class="center" @click="center">
+        <i class="icon icon-left" v-if="type=='secondary'&&back" ></i>
+        <slot></slot>
+      </div>
+      <div class="right">
+        <slot name="right"></slot>
+      </div>
     </div>
   </div>
 </template>
@@ -19,17 +24,29 @@ export default {
     },
     back: {
       type: Boolean,
-      default: false
+      default: function () {
+        let value = false
+        if (this.type === 'secondary') {
+          value = true
+        }
+        return value
+      }
     }
   },
   computed: {
     classes () {
       return [
         {
-          'navbar-back': this.back
         },
         this.type ? `navbar-${this.type}` : ''
       ]
+    }
+  },
+  methods: {
+    center () {
+      if (this.type === 'secondary') {
+        window.history.go(-1)
+      }
     }
   }
 }

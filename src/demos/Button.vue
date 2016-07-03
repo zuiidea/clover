@@ -37,7 +37,7 @@
 
   <div class="content-block-title">图标 icon</div>
   <div class="content-block">
-    <c-button icon>
+    <c-button icon small>
      <icon type="up"></icon>
     </c-button>
     <c-button icon>

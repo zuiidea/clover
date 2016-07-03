@@ -130,20 +130,17 @@
     &:before {
         content: '';
         position: absolute;
-        left: 16px;
+        left: 13px;
         top: 0;
         bottom: auto;
         right: auto;
         height: 1px;
-        width: e("calc(100% - 32px)");
+        width: e("calc(100% - 26px)");
         background-color: @color;
         display: block;
         z-index: 15;
         .transform-origin(50% 0%);
         .transform(scaleY(0.5));
-        .pixel-ratio-3 &{
-            .transform(scaleY(0.33));
-        }
     }
 }
 .hairline(@position, @color) when (@position = left) {
@@ -161,29 +158,23 @@
         z-index: 15;
         .transform-origin(0% 50%);
         .transform(scaleX(0.5));
-        .pixel-ratio-3 &{
-            .transform(scaleX(0.33));
-        }
     }
 }
 .hairline(@position, @color) when (@position = bottom) {
     &:after {
         content: '';
         position: absolute;
-        left: 16px;
+        left: 13px;
         bottom: 0;
         right: auto;
         top: auto;
         height: 1px;
-        width: e("calc(100% - 32px)");
+        width: e("calc(100% - 26px)");
         background-color: @color;
         display: block;
         z-index: 15;
-        .transform-origin(50% 100%);
+        .transform-origin(50% 0%);
         .transform(scaleY(0.5));
-        .pixel-ratio-3 &{
-            .transform(scaleY(0.33));
-        }
     }
 }
 .hairline(@position, @color, @full) when (@position = bottom),(@full = true) {
@@ -201,9 +192,6 @@
         z-index: 15;
         .transform-origin(50% 100%);
         .transform(scaleY(0.5));
-        .pixel-ratio-3 &{
-            .transform(scaleY(0.33));
-        }
     }
 }
 .hairline(@position, @color) when (@position = right) {
@@ -221,9 +209,6 @@
         z-index: 15;
         .transform-origin(100% 50%);
         .transform(scaleX(0.5));
-        .pixel-ratio-3 &{
-            .transform(scaleX(0.33));
-        }
     }
 }
 // For right and bottom

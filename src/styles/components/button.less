@@ -127,10 +127,19 @@
    color:darken(@textColor, 5%);
    &::after{
      border-radius: 50%;
+     width: 133.33%;
+     height: 133.33%;
+     -webkit-transform: scale(0.75);
+     transform: scale(0.75);
    }
    &:not([disabled]):active{
      color: #fff;
      background: darken(#fff, 20%);
+   }
+   &.button-small {
+     height: 26px;
+     width: 26px;
+     line-height: 26px;
    }
   }
 }
