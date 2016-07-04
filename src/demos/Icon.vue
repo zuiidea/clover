@@ -1,4 +1,8 @@
 <template>
+<Page>
+  <Navbar type="secondary" slot="navbar">
+      图标 icon
+  </Navbar>
   <div class="content-block">
     <div class="row">
       <div class="col-20">
@@ -109,14 +113,17 @@
       </div>
     </div>
   </div>
+</Page>
 </template>
 
 <script>
-import { Icon, CButton } from '../components'
+import { Icon, CButton, Navbar, Page } from '../components'
 export default {
   components: {
     Icon,
-    CButton
+    CButton,
+    Navbar,
+    Page
   }
 }
 </script>

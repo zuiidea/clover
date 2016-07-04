@@ -1,5 +1,8 @@
 <template>
-  <div>
+  <Page>
+  <Navbar type="secondary" slot="navbar">
+      按钮 c-button
+  </Navbar>
   <div class="content-block-title">默认 default</div>
   <div class="content-block">
       <c-button>按钮</c-button>
@@ -32,7 +35,6 @@
     <c-button radius>按钮</c-button>
     <c-button radius color="green">按钮</c-button>
     <c-button radius small>按钮</c-button>
-  </div>
   </div>
 
   <div class="content-block-title">图标 icon</div>
@@ -88,16 +90,18 @@
       <c-button color="orange">按钮</c-button>
     </p>
   </div>
-  </div>
+  </Page>
 </template>
 
 <script>
- import { CButton, Icon } from '../components'
+ import { CButton, Icon, Navbar, Page } from '../components'
  export default {
    name: 'button',
    components: {
      CButton,
-     Icon
+     Icon,
+     Navbar,
+     Page
    },
    methods: {
      change (value) {

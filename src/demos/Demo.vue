@@ -1,4 +1,5 @@
 <template>
+  <Page navbar-fixed=false>
     <div class="content-block-title">
       Basic
     </div>
@@ -138,13 +139,15 @@
 
         </ul>
     </div>
+  </Page>
 </template>
 
 <script>
-import { Icon } from '../components'
+import { Icon, Page } from '../components'
 export default {
   components: {
-    Icon
+    Icon,
+    Page
   }
 }
 </script>

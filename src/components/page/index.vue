@@ -1,0 +1,28 @@
+<template>
+  <div class="page" :class="classes">
+    <slot name="navbar"></slot>
+    <div class="page-content">
+     <slot></slot>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    navbarFixed: {
+      type: Boolean,
+      default: true
+    }
+  },
+  computed: {
+    classes () {
+      return [
+        {
+          'navbar-fixed': this.navbarFixed
+        }
+      ]
+    }
+  }
+}
+</script>
