@@ -1,5 +1,5 @@
 <template>
-  <Page navbar-fixed=false>
+  <Page :navbar-fixed="false">
     <div class="content-block-title">
       Basic
     </div>

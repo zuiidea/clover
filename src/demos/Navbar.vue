@@ -44,7 +44,7 @@
   <Navbar type="secondary">
     标题
   </Navbar>
-  <Navbar type="secondary" back=false class="demo">
+  <Navbar type="secondary" :back="false" class="demo">
     标题
   </Navbar>
   <div class="content-block-title">
