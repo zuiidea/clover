@@ -11,13 +11,23 @@ import Navbar from './demos/Navbar'
 Vue.use(Router)
 var App = Vue.extend({})
 var router = new Router()
+var device = Device()
 
 router.map({
   '/': {
-    component: Demo
+    component: function (resolve) {
+      if (device.pc) {
+        resolve(Index)
+      } else {
+        resolve(Demo)
+      }
+    }
   },
   '/home': {
     component: Home
+  },
+  '/demo': {
+    component: Demo
   },
   '/index': {
     component: Index
@@ -32,7 +42,5 @@ router.map({
     component: Icon
   }
 })
-
-Device()
 
 router.start(App, '#app')

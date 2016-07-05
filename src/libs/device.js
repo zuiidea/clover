@@ -1,11 +1,11 @@
 export default function () {
   let device = {}
   let ua = navigator.userAgent
-  let android = ua.match(/(Android)?[\s\/]+([\d.]+)?/)
+  let android = ua.match(/(Android)\s([\d_]+)/)
   let ipad = ua.match(/(iPad).*OS\s([\d_]+)/)
   let ipod = ua.match(/(iPod)(.*OS\s([\d_]+))?/)
   let iphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/)
-  device.ios = device.android = device.iphone = device.ipad = device.androidChrome = false
+  device.ios = device.android = device.iphone = device.ipad = device.androidChrome = device.pc = false
   // Android
   if (android) {
     device.os = 'android'
@@ -16,6 +16,9 @@ export default function () {
   if (ipad || iphone || ipod) {
     device.os = 'ios'
     device.ios = true
+  }
+  if (!android && !ipad && !iphone && !ipod) {
+    device.pc = true
   }
   // iOS
   if (iphone && !ipod) {

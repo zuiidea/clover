@@ -2,9 +2,9 @@
   <div class="main">
      <div class="mobile">
          <div class="mobile-inner">
-            <iframe src="/" frameborder="0"></iframe>
+            <iframe src="#!/demo"  frameborder="0"></iframe>
          </div>
-         <a class="btn" v-link="{ path: '/' }"><Icon type="send"></Icon></a>
+         <a class="btn" v-link="{ path: '/demo' }"><Icon type="send"></Icon></a>
      </div>
 
   </div>
