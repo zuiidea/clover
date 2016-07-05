@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Device from './libs/device'
 import Home from './Home'
+import Index from './Index'
 import Demo from './demos/Demo'
 import Button from './demos/Button'
 import Icon from './demos/Icon'
@@ -17,6 +18,9 @@ router.map({
   },
   '/home': {
     component: Home
+  },
+  '/index': {
+    component: Index
   },
   '/component/button': {
     component: Button

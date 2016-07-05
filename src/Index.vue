@@ -1,13 +1,10 @@
 <template>
-  <div class="home">
-    <div class="box">
-      <div class="logo animated fade-in-bottom delay-1">
-      </div>
-      <div class="clover animated fade-in-bottom delay-2">
-      </div>
-      <div class="slogan animated fade-in-bottom delay-3">
-      </div>
-    </div>
+  <div class="main">
+     <div class="mobile">
+         <div class="mobile-inner">
+            <iframe src="/" frameborder="0"></iframe>
+         </div>
+     </div>
   </div>
 </template>
 
@@ -26,5 +23,5 @@
 
 <style scoped lang="less">
   @import './styles/normalize.css';
-  @import './styles/home.less';
+  @import './styles/index.less';
 </style>
