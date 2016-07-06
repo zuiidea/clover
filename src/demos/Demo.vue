@@ -30,16 +30,13 @@
           </a>
         </li>
         <li>
-          <a class="item-link">
+          <a  v-link="{ path: '/component/grid' }" class="item-link">
             <div class="item-content">
               <div class="item-media icon-media">
                 <Icon type="send"></Icon>
               </div>
               <div class="item-inner">
-                <div class="item-title">布局 Layout</div>
-                <div class="item-after">
-                  敬请期待
-                </div>
+                <div class="item-title">网格 Grid</div>
               </div>
             </div>
           </a>

@@ -7,6 +7,7 @@ import Demo from './demos/Demo'
 import Button from './demos/Button'
 import Icon from './demos/Icon'
 import Navbar from './demos/Navbar'
+import Grid from './demos/Grid'
 
 Vue.use(Router)
 var App = Vue.extend({})
@@ -40,6 +41,9 @@ router.map({
   },
   '/component/icon': {
     component: Icon
+  },
+  '/component/grid': {
+    component: Grid
   }
 })
 
