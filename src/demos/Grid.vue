@@ -5,8 +5,8 @@
     </div>
     <div class="content-block">
       <row>
-        <col span="50">.col-50</col>
-        <col span="50">.col-50</col>
+        <colu span="50">.col-50</colu>
+        <colu span="50">.col-50</colu>
       </row>
     </div>
     <div class="content-block-title">
@@ -17,12 +17,12 @@
 </template>
 
 <script>
-import { Row, Col, Page } from '../components'
+import { Row, Colu, Page } from '../components'
 export default {
   components: {
     Row,
     Page,
-    Col
+    Colu
   }
 }
 </script>

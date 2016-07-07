@@ -6,7 +6,7 @@ import Icon from './icon'
 import Navbar from './navbar'
 import Page from './page'
 import Row from './row'
-import Col from './col'
+import Colu from './colu'
 
 const vux = {
   CButton,
@@ -14,7 +14,7 @@ const vux = {
   Icon,
   Page,
   Row,
-  Col
+  Colu
 }
 
 module.exports = vux

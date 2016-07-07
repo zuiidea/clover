@@ -1,7 +1,7 @@
 <template>
-  <div :class="['col-'+span]">
-    <slot></slot>66
-  </div>
+  <div :class="'col-'+span">
+    <slot></slot>
+  </civ>
 </template>
 
 <script>
