@@ -6,7 +6,7 @@ import Icon from './icon'
 import Navbar from './navbar'
 import Page from './page'
 import Row from './row'
-import Colu from './colu'
+import Column from './column'
 import Lists from './lists'
 import List from './list'
 
@@ -16,7 +16,7 @@ const vux = {
   Icon,
   Page,
   Row,
-  Colu,
+  Column,
   Lists,
   List
 }
