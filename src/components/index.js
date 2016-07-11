@@ -1,7 +1,7 @@
 /* only for building vux.css */
 import Style from '../styles/index.vue' // eslint-disable-line
 
-import CButton from './c-button'
+import Btn from './btn'
 import Icon from './icon'
 import Navbar from './navbar'
 import Page from './page'

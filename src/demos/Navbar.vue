@@ -8,30 +8,30 @@
   </div>
   <Navbar class="demo">
     <div slot="left">
-      <c-button icon small>
+      <btn icon small>
         <icon type="filter"></icon>
-      </c-button>
+      </btn>
     </div>
     标题
     <div slot="right">
-      <c-button icon small>
+      <btn icon small>
        <icon type="cross"></icon>
-      </c-button>
+      </btn>
     </div>
   </Navbar>
   <Navbar class="demo">
        <div>标题</div>
       <div slot="right">
-        <c-button icon small>
+        <btn icon small>
          <icon type="cross"></icon>
-        </c-button>
+        </btn>
       </div>
   </Navbar>
   <Navbar class="demo">
     <div slot="left">
-      <c-button icon small>
+      <btn icon small>
         <icon type="filter"></icon>
-      </c-button>
+      </btn>
     </div>
      标题
   </Navbar>
@@ -52,27 +52,27 @@
   </div>
   <Navbar type="tab" class="demo">
     <div slot="left">
-      <c-button icon small>
+      <btn icon small>
         <icon type="filter"></icon>
-      </c-button>
+      </btn>
     </div>
     标题
     <div slot="right">
-      <c-button icon small>
+      <btn icon small>
        <icon type="cross"></icon>
-      </c-button>
+      </btn>
     </div>
   </Navbar>
   </Page>
 </template>
 
 <script>
-import { Navbar, Icon, CButton, Page } from '../components'
+import { Navbar, Icon, Btn, Page } from '../components'
 export default {
   components: {
     Navbar,
     Icon,
-    CButton,
+    Btn,
     Page
   }
 }

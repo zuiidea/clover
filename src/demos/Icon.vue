@@ -6,110 +6,110 @@
   <div class="content-block">
     <div class="row">
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="up"></icon>
-        </c-button>
+        </btn>
       </div>
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="down"></icon>
-        </c-button>
+        </btn>
       </div>
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="right"></icon>
-        </c-button>
+        </btn>
       </div>
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="left"></icon>
-        </c-button>
+        </btn>
       </div>
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="wifi01"></icon>
-        </c-button>
+        </btn>
       </div>
     </div>
     <div class="row">
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="accountsecuriyt"></icon>
-        </c-button>
+        </btn>
       </div>
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="addpo"></icon>
-        </c-button>
+        </btn>
       </div>
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="my"></icon>
-        </c-button>
+        </btn>
       </div>
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="delete"></icon>
-        </c-button>
+        </btn>
       </div>
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="love"></icon>
-        </c-button>
+        </btn>
       </div>
     </div>
     <div class="row">
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="star"></icon>
-        </c-button>
+        </btn>
       </div>
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="map"></icon>
-        </c-button>
+        </btn>
       </div>
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="check"></icon>
-        </c-button>
+        </btn>
       </div>
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="lock"></icon>
-        </c-button>
+        </btn>
       </div>
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="share"></icon>
-        </c-button>
+        </btn>
       </div>
     </div>
     <div class="row">
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="more"></icon>
-        </c-button>
+        </btn>
       </div>
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="microphone"></icon>
-        </c-button>
+        </btn>
       </div>
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="send"></icon>
-        </c-button>
+        </btn>
       </div>
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="cross"></icon>
-        </c-button>
+        </btn>
       </div>
       <div class="col-20">
-        <c-button icon>
+        <btn icon>
          <icon type="filter"></icon>
-        </c-button>
+        </btn>
       </div>
     </div>
   </div>
@@ -117,11 +117,11 @@
 </template>
 
 <script>
-import { Icon, CButton, Navbar, Page } from '../components'
+import { Icon, Btn, Navbar, Page } from '../components'
 export default {
   components: {
     Icon,
-    CButton,
+    Btn,
     Navbar,
     Page
   }

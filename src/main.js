@@ -4,7 +4,7 @@ import Device from './libs/device'
 import Home from './Home'
 import Index from './Index'
 import Demo from './demos/Demo'
-import Button from './demos/Button'
+import Btn from './demos/Btn'
 import Icon from './demos/Icon'
 import Navbar from './demos/Navbar'
 import Grid from './demos/Grid'
@@ -33,8 +33,8 @@ router.map({
   '/index': {
     component: Index
   },
-  '/component/button': {
-    component: Button
+  '/component/btn': {
+    component: Btn
   },
   '/component/navbar': {
     component: Navbar
