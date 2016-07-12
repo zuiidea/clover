@@ -6,7 +6,7 @@
     <div class="list-block">
       <ul>
         <li>
-          <a v-link="{ path: '/component/button' }" class="item-link">
+          <a v-link="{ path: '/component/btn' }" class="item-link">
             <div class="item-content">
               <div class="item-media icon-media bg-cyan">
                 <Icon type="star"></Icon>
@@ -37,6 +37,18 @@
               </div>
               <div class="item-inner">
                 <div class="item-title">网格 Grid</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a  v-link="{ path: '/component/list' }" class="item-link">
+            <div class="item-content">
+              <div class="item-media icon-media">
+                <Icon type="send"></Icon>
+              </div>
+              <div class="item-inner">
+                <div class="item-title">列表 List</div>
               </div>
             </div>
           </a>

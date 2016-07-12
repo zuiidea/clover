@@ -39,30 +39,14 @@
 
   <div class="content-block-title">图标 icon</div>
   <div class="content-block">
-    <btn icon small>
-     <icon type="up"></icon>
-    </btn>
-    <btn icon>
-     <icon type="down"></icon>
-    </btn>
-    <btn icon>
-     <icon type="right"></icon>
-    </btn>
-    <btn icon>
-     <icon type="left"></icon>
-    </btn>
-    <btn icon>
-     <icon type="wifi01"></icon>
-    </btn>
-    <btn icon>
-     <icon type="cross"></icon>
-    </btn>
-    <btn icon>
-     <icon type="more"></icon>
-    </btn>
-    <btn icon>
-     <icon type="share"></icon>
-    </btn>
+    <btn icon="up" small></btn>
+    <btn icon="down"></btn>
+    <btn icon="right"></btn>
+    <btn icon="left"></btn>
+    <btn icon="wifi01"></btn>
+    <btn icon="cross"></btn>
+    <btn icon="more"></btn>
+    <btn icon="share"></btn>
   </div>
 
   <div class="content-block-title">禁止 disabled</div>

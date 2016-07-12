@@ -3,6 +3,7 @@
   class="button" :class="classes" :disabled="disabled"
   @touchstart="handleClick">
     <slot></slot>
+    <i v-if="icon" class="icon" :class="['icon-'+icon]"></i>
   </a>
 </template>
 
@@ -34,8 +35,8 @@ export default {
       default: false
     },
     icon: {
-      type: Boolean,
-      default: false
+      type: String,
+      default: ''
     }
   },
   computed: {
@@ -46,10 +47,10 @@ export default {
           'button-fill': this.fill,
           'button-small': this.small,
           'button-radius': this.radius,
-          'button-fluid': this.fluid,
-          'button-icon': this.icon
+          'button-fluid': this.fluid
         },
-        this.color ? `button-${this.color}` : ''
+        this.color ? `button-${this.color}` : '',
+        this.icon ? 'button-icon' : ''
       ]
     }
   },

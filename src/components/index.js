@@ -11,7 +11,7 @@ import Lists from './lists'
 import List from './list'
 
 const vux = {
-  CButton,
+  Btn,
   Navbar,
   Icon,
   Page,
