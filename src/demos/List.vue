@@ -4,16 +4,29 @@
       默认 Default
     </div>
     <list>
-      66
+      <list-item>
+        <div slot="media">
+          <btn icon="my" small></btn>
+        </div>
+      <div class="item-title">
+        Ivan Petrov
+      </div>
+      <div class="item-after">
+       CEO
+      </div>
+      </list-item>
     </list>
   </Page>
 </template>
 
 <script>
-import { List } from '../components'
+import { List, ListItem, Btn } from '../components'
+
 export default {
   components: {
-    List
+    List,
+    ListItem,
+    Btn
   }
 }
 </script>

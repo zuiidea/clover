@@ -1,7 +1,9 @@
 <template>
-  <div :class="'list-'+type">
+  <div class="list-block" :class="'list-'+type">
+    <ul>
     <slot></slot>
-  </civ>
+    </ul>
+  </div>
 </template>
 
 <script>

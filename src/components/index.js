@@ -7,8 +7,7 @@ import Navbar from './navbar'
 import Page from './page'
 import Row from './row'
 import Column from './column'
-import Lists from './lists'
-import List from './list'
+import { List, ListItem } from './list/'
 
 const vux = {
   Btn,
@@ -17,8 +16,10 @@ const vux = {
   Page,
   Row,
   Column,
-  Lists,
-  List
+  List,
+  ListItem
 }
+
+console.log(vux)
 
 module.exports = vux
