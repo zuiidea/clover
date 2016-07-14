@@ -15,6 +15,17 @@
        CEO
       </div>
       </list-item>
+      <list-item link>
+        <div slot="media">
+          <icon type="my" small></btn>
+        </div>
+      <div class="item-title">
+        Ivan Petrov
+      </div>
+      <div class="item-after">
+       CEO
+      </div>
+      </list-item>
     </list>
   </Page>
 </template>

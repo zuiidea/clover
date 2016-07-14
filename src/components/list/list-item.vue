@@ -1,6 +1,14 @@
 <template>
   <li>
-    <div class="item-content">
+    <a class="item-link item-content"  v-if="link">
+      <div class="item-media">
+        <slot name="media"></slot>
+      </div>
+      <div class="item-inner">
+        <slot></slot>
+      </div>
+    </a>
+    <div class="item-content" v-else="link">
       <div class="item-media">
         <slot name="media"></slot>
       </div>
@@ -8,13 +16,17 @@
         <slot></slot>
       </div>
     </div>
+
   </li>
 </template>
 
 <script>
 export default {
   props: {
-    type: String
+    link: {
+      type: Boolean,
+      default: false
+    }
   }
 }
 </script>
