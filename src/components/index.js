@@ -7,6 +7,7 @@ import Navbar from './navbar'
 import Page from './page'
 import Row from './row'
 import Column from './column'
+import Badge from './badge'
 import { List, ListItem } from './list/'
 
 const vux = {
@@ -17,9 +18,8 @@ const vux = {
   Row,
   Column,
   List,
-  ListItem
+  ListItem,
+  Badge
 }
-
-console.log(vux)
 
 module.exports = vux

@@ -6,7 +6,7 @@
     <list>
       <list-item>
         <div slot="media">
-          <btn icon="my" small></btn>
+          <icon type="my" small></btn>
         </div>
       <div class="item-title">
         Ivan Petrov
@@ -20,13 +20,14 @@
 </template>
 
 <script>
-import { List, ListItem, Btn } from '../components'
+import { List, ListItem, Btn, Icon } from '../components'
 
 export default {
   components: {
     List,
     ListItem,
-    Btn
+    Btn,
+    Icon
   }
 }
 </script>
