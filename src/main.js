@@ -9,6 +9,7 @@ import Icon from './demos/Icon'
 import Navbar from './demos/Navbar'
 import Grid from './demos/Grid'
 import List from './demos/List'
+import Badge from './demos/Badge'
 
 Vue.use(Router)
 var App = Vue.extend({})
@@ -48,6 +49,9 @@ router.map({
   },
   '/component/list': {
     component: List
+  },
+  '/component/badge': {
+    component: Badge
   }
 })
 
