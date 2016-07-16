@@ -1,5 +1,8 @@
 <template>
   <Page>
+    <Navbar type="secondary" slot="navbar">
+        列表 list
+    </Navbar>
     <div class="content-block-title">
       默认 Default
     </div>
