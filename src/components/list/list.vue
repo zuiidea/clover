@@ -9,7 +9,9 @@
 <script>
 export default {
   props: {
-    type: String
+    type: {
+      type: String
+    }
   }
 }
 </script>
