@@ -30,11 +30,54 @@
       </div>
       </list-item>
     </list>
+    <div class="content-block-title">
+      默认 Icon
+    </div>
+    <list>
+      <list-item link>
+        <div slot="media">
+          <icon type="my" small></btn>
+        </div>
+      <div class="item-title">
+        移动网络
+      </div>
+      </list-item>
+      <list-item link>
+        <div slot="media">
+          <icon type="my" small></btn>
+        </div>
+      <div class="item-title">
+        WLAN
+      </div>
+      <div class="item-after">
+      XIAOMI-wifi
+      </div>
+      </list-item>
+      <list-item link>
+        <div slot="media">
+          <icon type="my" small></btn>
+        </div>
+      <div class="item-title">
+        蓝牙
+      </div>
+      <div class="item-after">
+       已开启
+      </div>
+      </list-item>
+      <list-item link>
+        <div slot="media">
+          <icon type="my" small></btn>
+        </div>
+      <div class="item-title">
+        其他连接方式
+      </div>
+      </list-item>
+    </list>
   </Page>
 </template>
 
 <script>
-import { List, ListItem, Btn, Icon, Badge } from '../components'
+import { List, ListItem, Btn, Icon, Badge, Page, Navbar } from '../components'
 
 export default {
   components: {
@@ -42,7 +85,9 @@ export default {
     ListItem,
     Btn,
     Icon,
-    Badge
+    Badge,
+    Page,
+    Navbar
   }
 }
 </script>
