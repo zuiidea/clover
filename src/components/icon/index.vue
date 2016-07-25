@@ -4,14 +4,6 @@
 
 <script>
 export default {
-  data () {
-    if (this.link) {
-      return {
-        img: require('../../assets/' + this.link)
-      }
-    }
-    return {}
-  },
   props: {
     type: {
       type: String
@@ -30,7 +22,7 @@ export default {
     },
     styles () {
       return [
-        this.link ? { backgroundImage: `url(${this.img})` } : ''
+        this.link ? { backgroundImage: 'url(' + this.link + ')' } : ''
       ]
     }
   }

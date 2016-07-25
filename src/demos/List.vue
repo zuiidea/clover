@@ -36,7 +36,7 @@
     <list>
       <list-item link>
         <div slot="media">
-          <icon link="demos/icon-setting/ic_mobile_network_settings.png" small></icon>
+          <icon link="http://oa5auszt6.bkt.clouddn.com/ic_mobile_network_settings.png" small></icon>
         </div>
       <div class="item-title">
         移动网络
@@ -44,7 +44,7 @@
       </list-item>
       <list-item link>
         <div slot="media">
-          <icon link="demos/icon-setting/ic_wifi_settings.png" small></icon>
+          <icon link="http://oa5auszt6.bkt.clouddn.com/ic_wifi_settings.png" small></icon>
         </div>
       <div class="item-title">
         WLAN
@@ -55,7 +55,7 @@
       </list-item>
       <list-item link>
         <div slot="media">
-          <icon link="demos/icon-setting/ic_bluetooth_settings.png" small></icon>
+          <icon link="http://oa5auszt6.bkt.clouddn.com/ic_bluetooth_settings.png" small></icon>
         </div>
       <div class="item-title">
         蓝牙
@@ -66,7 +66,7 @@
       </list-item>
       <list-item link>
         <div slot="media">
-          <icon link="demos/icon-setting/ic_wifi_more_settings.png" small></icon>
+          <icon link="http://oa5auszt6.bkt.clouddn.com/ic_wifi_more_settings.png" small></icon>
         </div>
       <div class="item-title">
         其他连接方式
