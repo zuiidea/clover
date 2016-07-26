@@ -31,7 +31,7 @@
       </list-item>
     </list>
     <div class="content-block-title">
-      默认 Icon
+      图标 Icon
     </div>
     <list>
       <list-item link>
@@ -68,6 +68,21 @@
         <div slot="media">
           <icon link="http://oa5auszt6.bkt.clouddn.com/ic_wifi_more_settings.png" small></icon>
         </div>
+      <div class="item-title">
+        其他连接方式
+      </div>
+      </list-item>
+    </list>
+    <div class="content-block-title">
+       无图标 no icons
+    </div>
+    <list>
+      <list-item link>
+      <div class="item-title">
+        蓝牙
+      </div>
+      </list-item>
+      <list-item link>
       <div class="item-title">
         其他连接方式
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="list-block" :class="'list-'+type">
+  <div class="list-block" :class="classes">
     <ul>
     <slot></slot>
     </ul>
@@ -11,6 +11,13 @@ export default {
   props: {
     type: {
       type: String
+    }
+  },
+  computed: {
+    classes () {
+      return [
+        this.type ? `list-${this.type}` : ''
+      ]
     }
   }
 }
