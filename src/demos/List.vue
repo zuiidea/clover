@@ -9,7 +9,7 @@
     <list>
       <list-item>
         <div slot="media">
-          <icon type="my" small></icon>
+          <icon type="my"></icon>
         </div>
       <div class="item-title">
         Ivan Petrov
@@ -20,7 +20,7 @@
       </list-item>
       <list-item link>
         <div slot="media">
-          <icon type="my" small></icon>
+          <icon type="my"></icon>
         </div>
       <div class="item-title">
         Ivan Petrov
@@ -36,7 +36,7 @@
     <list>
       <list-item link>
         <div slot="media">
-          <icon link="http://oa5auszt6.bkt.clouddn.com/ic_mobile_network_settings.png" small></icon>
+          <icon link="http://oa5auszt6.bkt.clouddn.com/ic_mobile_network_settings.png" circle></icon>
         </div>
       <div class="item-title">
         移动网络
@@ -44,7 +44,7 @@
       </list-item>
       <list-item link>
         <div slot="media">
-          <icon link="http://oa5auszt6.bkt.clouddn.com/ic_wifi_settings.png" small></icon>
+          <icon link="http://oa5auszt6.bkt.clouddn.com/ic_wifi_settings.png" circle></icon>
         </div>
       <div class="item-title">
         WLAN
@@ -55,7 +55,7 @@
       </list-item>
       <list-item link>
         <div slot="media">
-          <icon link="http://oa5auszt6.bkt.clouddn.com/ic_bluetooth_settings.png" small></icon>
+          <icon link="http://oa5auszt6.bkt.clouddn.com/ic_bluetooth_settings.png" circle></icon>
         </div>
       <div class="item-title">
         蓝牙
@@ -66,7 +66,7 @@
       </list-item>
       <list-item link>
         <div slot="media">
-          <icon link="http://oa5auszt6.bkt.clouddn.com/ic_wifi_more_settings.png" small></icon>
+          <icon link="http://oa5auszt6.bkt.clouddn.com/ic_wifi_more_settings.png" circle></icon>
         </div>
       <div class="item-title">
         其他连接方式
@@ -74,7 +74,7 @@
       </list-item>
     </list>
     <div class="content-block-title">
-       无图标 no icons
+       无图标 no icon
     </div>
     <list>
       <list-item link>
@@ -83,6 +83,61 @@
       </div>
       </list-item>
       <list-item link>
+      <div class="item-title">
+        其他连接方式
+      </div>
+      </list-item>
+    </list>
+    <div class="content-block-title">
+      中图标 middle icon
+    </div>
+    <list>
+      <list-item media>
+        <div slot="media">
+          <icon link="http://oa5auszt6.bkt.clouddn.com/com.tencent.mm.png" radius></icon>
+        </div>
+      <div class="item-title">
+        <div class="item-title-row">
+          <div class="item-title">
+            QQ
+          </div>
+        </div>
+        <div class="item-title-row">
+            <div class="item-text">
+             一个进程和服务
+            </div>
+            <div class="item-after">
+             20MB 11:01:38
+            </div>
+        </div>
+      </div>
+      </list-item>
+      <list-item link>
+        <div slot="media">
+          <icon link="http://oa5auszt6.bkt.clouddn.com/com.tencent.mobileqq.png" radius></icon>
+        </div>
+      <div class="item-title">
+        WLAN
+      </div>
+      <div class="item-after">
+      XIAOMI-wifi
+      </div>
+      </list-item>
+      <list-item link>
+        <div slot="media">
+          <icon link="http://oa5auszt6.bkt.clouddn.com/com.sina.weibo.png" radius></icon>
+        </div>
+      <div class="item-title">
+        蓝牙
+      </div>
+      <div class="item-after">
+       已开启
+      </div>
+      </list-item>
+      <list-item link>
+        <div slot="media">
+          <icon link="http://oa5auszt6.bkt.clouddn.com/com.android.music.png" radius></icon>
+        </div>
       <div class="item-title">
         其他连接方式
       </div>
