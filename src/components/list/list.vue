@@ -9,14 +9,17 @@
 <script>
 export default {
   props: {
-    type: {
-      type: String
+    media: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
     classes () {
       return [
-        this.type ? `list-${this.type}` : ''
+        {
+          'media-list': this.media
+        }
       ]
     }
   }
