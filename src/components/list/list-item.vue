@@ -27,6 +27,19 @@ export default {
       type: Boolean,
       default: false
     }
+  },
+  computed: {
+    hasMedia: function () {
+      return !!this.$el.querySelector('[slot="media"]')
+    }
+  },
+  events: {
+    'hook:ready': function () {
+      if (!this.$el.querySelector('[slot="media"]')) {
+        // document.body.removeChild(this.$el.querySelector('.item-media'))
+        this.$el.querySelector('.item-media').$remove()
+      }
+    }
   }
 }
 </script>
