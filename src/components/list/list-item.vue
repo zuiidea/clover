@@ -36,8 +36,7 @@ export default {
   events: {
     'hook:ready': function () {
       if (!this.$el.querySelector('[slot="media"]')) {
-        // document.body.removeChild(this.$el.querySelector('.item-media'))
-        this.$el.querySelector('.item-media').$remove()
+        this.$el.querySelector('.item-media').parentNode.removeChild(this.$el.querySelector('.item-media'))
       }
     }
   }
