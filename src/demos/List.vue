@@ -175,9 +175,6 @@
         <div class="item-text">
          社交聊天
         </div>
-        <div class="item-after">
-          <btn small color="green">安装</btn>
-        </div>
       </list-item>
       <list-item>
         <div slot="media">
