@@ -10,6 +10,7 @@ import Navbar from './demos/Navbar'
 import Grid from './demos/Grid'
 import List from './demos/List'
 import Badge from './demos/Badge'
+import Rater from './demos/Rater'
 
 Vue.use(Router)
 var App = Vue.extend({})
@@ -52,6 +53,9 @@ router.map({
   },
   '/component/badge': {
     component: Badge
+  },
+  '/component/rater': {
+    component: Rater
   }
 })
 

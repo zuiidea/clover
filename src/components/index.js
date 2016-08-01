@@ -8,6 +8,7 @@ import Page from './page'
 import Row from './row'
 import Column from './column'
 import Badge from './badge'
+import Rater from './rater'
 import { List, ListItem } from './list/'
 
 const vux = {
@@ -19,7 +20,8 @@ const vux = {
   Column,
   List,
   ListItem,
-  Badge
+  Badge,
+  Rater
 }
 
 module.exports = vux

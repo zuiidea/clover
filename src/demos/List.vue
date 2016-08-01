@@ -162,19 +162,19 @@
     </div>
     <list media>
       <list-item>
-        <icon slot="media" link="http://oa5auszt6.bkt.clouddn.com/com.tencent.mm.png" radius size="35"></icon>
+        <icon slot="media" link="http://oa5auszt6.bkt.clouddn.com/com.tencent.mm.png" radius size="61"></icon>
         <div class="item-title-row">
           <div class="item-title">
             微信
           </div>
-          <div class="item-text">
-           社交聊天
-          </div>
-
+        </div>
+        <div class="item-text">
+         <rater :value="3">
         </div>
         <div class="item-text">
          社交聊天
         </div>
+        <btn slot="extra" small color="green">下载</btn>
       </list-item>
       <list-item>
         <div slot="media">
@@ -229,7 +229,7 @@
 </template>
 
 <script>
-import { List, ListItem, Btn, Icon, Badge, Page, Navbar } from '../components'
+import { List, ListItem, Btn, Icon, Badge, Page, Navbar, Rater } from '../components'
 
 export default {
   components: {
@@ -239,7 +239,8 @@ export default {
     Icon,
     Badge,
     Page,
-    Navbar
+    Navbar,
+    Rater
   }
 }
 </script>

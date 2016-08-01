@@ -1,14 +1,15 @@
 <template>
   <div class="rater" :class="classes">
-    <span>{{star}}</span>
+    <template  v-for="i in value">
+      <span class="active">{{star}}</span>
+    </template><template  v-for="i in max - value">
+      <span>{{star}}</span>
+    </template>
   </div>
 </template>
 
 <script>
 export default {
-  ready () {
-    this.updateStyle()
-  },
   props: {
     max: {
       type: Number,
@@ -29,6 +30,7 @@ export default {
   },
   methods: {
     classes () {
+      console.log(this.value)
       return [
         this.size ? `rater-${this.size}` : ''
       ]

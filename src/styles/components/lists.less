@@ -22,8 +22,8 @@
     }
 
     .inset() {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: @blockPadding;
+        margin-right: @blockPadding;
         border-radius: 4px;
         .content-block-title {
             margin-left: 0;
@@ -76,11 +76,19 @@
             margin-left: 8px;
         }
     }
+
+    .item-extra {
+        .flexbox();
+        .flex-shrink(0);
+        .flex-wrap(nowrap);
+        .align-items(center);
+        padding-right: @blockPadding;
+    }
     .item-media + .item-inner {
         margin-left: 12px;
     }
     .item-inner {
-        padding-right: 16px;
+        padding-right: @blockPadding;
         position: relative;
         width: 100%;
         padding-top: 8px;
@@ -133,23 +141,23 @@
             background-size: 18px 24px;
             background-repeat: no-repeat;
             background-position: 95% center;
-            background-position: -webkit-calc(~"100% - 16px") center;
-            background-position: calc(~"100% - 16px") center;
+            background-position: -webkit-calc(~"100% - @blockPadding") center;
+            background-position: calc(~"100% - @blockPadding") center;
             background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWwpAZm9udC1mYWNlIHsgZm9udC1mYW1pbHk6IGlmb250OyBzcmM6IHVybCgiaHR0cDovL2F0LmFsaWNkbi5jb20vdC9mb250XzE0NDIzNzM4OTZfNDc1NDQ1NS5lb3Q/I2llZml4IikgZm9ybWF0KCJlbWJlZGRlZC1vcGVudHlwZSIpLCB1cmwoImh0dHA6Ly9hdC5hbGljZG4uY29tL3QvZm9udF8xNDQyMzczODk2XzQ3NTQ0NTUud29mZiIpIGZvcm1hdCgid29mZiIpLCB1cmwoImh0dHA6Ly9hdC5hbGljZG4uY29tL3QvZm9udF8xNDQyMzczODk2XzQ3NTQ0NTUudHRmIikgZm9ybWF0KCJ0cnVldHlwZSIpLCB1cmwoImh0dHA6Ly9hdC5hbGljZG4uY29tL3QvZm9udF8xNDQyMzczODk2XzQ3NTQ0NTUuc3ZnI2lmb250IikgZm9ybWF0KCJzdmciKTsgfQoKXV0+PC9zdHlsZT48L2RlZnM+PGcgY2xhc3M9InRyYW5zZm9ybS1ncm91cCI+PGcgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSwgMC4wMTU2MjUpIj48cGF0aCBkPSJNMzA4Ljk4MjcwMiA5MDYuMDkyNjEzYzIuNDg2NjM0IDAgNC45NzYzMzgtMC45MDE1MzMgNi45NDUxNzktMi43MjE5OTRMNzI1LjE5MTAwOCA1MjQuODE1ODg3YzQuMTQ4NDgzLTMuODM3Mzk4IDQuNDAxMjQtMTAuMzExODU3IDAuNTYzODQyLTE0LjQ2MTM2My0zLjgzODQyMi00LjE0NzQ2LTEwLjMxMTg1Ny00LjQwMTI0LTE0LjQ2MTM2My0wLjU2Mzg0MmwtNDA5LjI2MTA4MSAzNzguNTU2Nzc5Yy00LjE0OTUwNyAzLjgzNzM5OC00LjQwMTI0IDEwLjMxMjg4LTAuNTYzODQyIDE0LjQ2MDM0QzMwMy40ODQ0NzggOTA0Ljk4NzQ0MyAzMDYuMjMxMDMxIDkwNi4wOTI2MTMgMzA4Ljk4MjcwMiA5MDYuMDkyNjEzek03MTguNjY5NDc4IDUyMy43OTY2NzRjMi43MzkzOTEgMCA1LjQ3MTYxOC0xLjA5Mjg5MSA3LjQ4NjUwOC0zLjI1NDExNCAzLjg1Mzc3MS00LjEzNDE1NyAzLjYyNzYyLTEwLjYwODYxNS0wLjUwNTUxMy0xNC40NjM0MUwzMTIuMzA0MzU0IDEyMC42NTQ5NjRjLTQuMTMzMTM0LTMuODUyNzQ4LTEwLjYwNjU2OS0zLjYyNzYyLTE0LjQ2MjM4NyAwLjUwNTUxMy0zLjg1Mzc3MSA0LjEzNDE1Ny0zLjYyNzYyIDEwLjYwODYxNSAwLjUwNTUxMyAxNC40NjM0MUw3MTEuNjkyNTc2IDUyMS4wNDgwNzNDNzEzLjY2NDQ4NyA1MjIuODg1OTMxIDcxNi4xNjk1NDEgNTIzLjc5NjY3NCA3MTguNjY5NDc4IDUyMy43OTY2NzR6IiBmaWxsPSIjYWRhZGFkIj48L3BhdGg+PC9nPjwvZz48L3N2Zz4=);
         }
         &:active, &.active-state {
             background-color: rgba(0,0,0,0.05);
         }
         &.list-button {
-            padding: 0 16px;
-            font-size: 16px;
+            padding: 0 @blockPadding;
+            font-size: @blockPadding;
             display: block;
             line-height: 51px;
         }
     }
     .item-content {
         box-sizing:border-box;
-        padding-left: 16px;
+        padding-left: @blockPadding;
         min-height: 51px;
         .flexbox();
         .justify-content(space-between);
@@ -158,7 +166,7 @@
     // Label after List block
     .list-block-label {
         margin: 10px 0 35px;
-        padding: 0 16px;
+        padding: 0 @blockPadding;
         font-size: 14px;
         color: rgba(0,0,0,0.54);
     }
@@ -261,7 +269,7 @@
         }
         .item-link .item-inner {
             background: none;
-            padding-right: 16px;
+            padding-right: @blockPadding;
         }
         .item-link .item-title-row {
             padding-right: 26px;
@@ -300,7 +308,7 @@
     .item-divider, .list-group-title {
         background: #f4f4f4;
         .hairline-remove(top);
-        padding: 0px 16px;
+        padding: 0px @blockPadding;
         white-space: nowrap;
         position: relative;
         max-width: 100%;
@@ -349,7 +357,7 @@
             opacity: 1;
         }
         .item-inner, .item-link .item-inner {
-            padding-right: 16px + 18px + 16px;
+            padding-right: @blockPadding + 18px + @blockPadding;
         }
         .item-link .item-inner, .item-link .item-title-row {
             background-image: none;
