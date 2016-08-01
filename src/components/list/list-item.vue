@@ -1,7 +1,7 @@
 <template>
   <li>
     <a class="item-link item-content"  v-if="link">
-      <div class="item-media">
+      <div class="item-media" v-if="hasMedia">
         <slot name="media"></slot>
       </div>
       <div class="item-inner">
@@ -9,7 +9,7 @@
       </div>
     </a>
     <div class="item-content" v-else="link">
-      <div class="item-media">
+      <div class="item-media" v-if="hasMedia">
         <slot name="media"></slot>
       </div>
       <div class="item-inner">
@@ -26,18 +26,17 @@ export default {
     link: {
       type: Boolean,
       default: false
-    }
-  },
-  computed: {
-    hasMedia: function () {
-      return !!this.$el.querySelector('[slot="media"]')
+    },
+    hasMedia: {
+      type: Boolean,
+      default: true
     }
   },
   events: {
     'hook:ready': function () {
-      if (!this.$el.querySelector('[slot="media"]')) {
-        this.$el.querySelector('.item-media').parentNode.removeChild(this.$el.querySelector('.item-media'))
-      }
+      this.$nextTick(function () {
+        this.hasMedia = !!this.$el.querySelector('[slot="media"]')
+      })
     }
   }
 }
