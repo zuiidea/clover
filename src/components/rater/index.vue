@@ -23,16 +23,18 @@ export default {
       type: String,
       default: '★'
     },
-    size: {
-      type: Number,
-      default: 25
+    small: {
+      type: Boolean,
+      default: false
     }
   },
   methods: {
     classes () {
       console.log(this.value)
       return [
-        this.size ? `rater-${this.size}` : ''
+        {
+          'rater-small': this.small
+        }
       ]
     }
   }

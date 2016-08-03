@@ -169,60 +169,63 @@
           </div>
         </div>
         <div class="item-text">
-         <rater :value="3">
+         <rater :value="4" small>
         </div>
         <div class="item-text">
-         社交聊天
+         社交聊天 46.9M
+        </div>
+        <btn slot="extra" small>打开</btn>
+      </list-item>
+      <list-item>
+        <div slot="media">
+          <icon link="http://oa5auszt6.bkt.clouddn.com/com.taobao.taobao.png" radius size="61">
+        </div>
+        <div class="item-title-row">
+          <div class="item-title">
+            手机淘宝
+          </div>
+        </div>
+        <div class="item-text">
+         <rater :value="3" small>
+        </div>
+        <div class="item-text">
+         时尚购物 48.9M
+        </div>
+        <btn slot="extra" small color="green">安装</btn>
+      </list-item>
+      <list-item>
+        <div slot="media">
+          <icon link="http://oa5auszt6.bkt.clouddn.com/com.sina.weibo.png" radius size="61">
+        </div>
+        <div class="item-title-row">
+          <div class="item-title">
+            微博
+          </div>
+        </div>
+        <div class="item-text">
+         <rater :value="5" small>
+        </div>
+        <div class="item-text">
+         社交聊天 52.1M
         </div>
         <btn slot="extra" small color="green">下载</btn>
       </list-item>
       <list-item>
         <div slot="media">
-          <icon link="http://oa5auszt6.bkt.clouddn.com/com.tencent.mobileqq.png" radius size="35">
-        </div>
-        <div class="item-title">
-          QQ
+          <icon link="http://oa5auszt6.bkt.clouddn.com/com.android.music.png" radius size="61">
         </div>
         <div class="item-title-row">
-            <div class="item-text">
-             一个进程和2个服务
-            </div>
-            <div class="item-after">
-             20MB 11:01:38
-            </div>
+          <div class="item-title">
+            音乐
+          </div>
         </div>
-      </list-item>
-      <list-item>
-        <div slot="media">
-          <icon link="http://oa5auszt6.bkt.clouddn.com/com.sina.weibo.png" radius size="35">
+        <div class="item-text">
+         <rater :value="5" small>
         </div>
-        <div class="item-title">
-          微博
+        <div class="item-text">
+         影音视听 10.9M
         </div>
-        <div class="item-title-row">
-            <div class="item-text">
-             一个进程和2个服务
-            </div>
-            <div class="item-after">
-             20MB 11:01:38
-            </div>
-        </div>
-      </list-item>
-      <list-item>
-        <div slot="media">
-          <icon link="http://oa5auszt6.bkt.clouddn.com/com.android.music.png" radius size="35">
-        </div>
-        <div class="item-title">
-          音乐
-        </div>
-        <div class="item-title-row">
-            <div class="item-text">
-             一个进程和2个服务
-            </div>
-            <div class="item-after">
-             20MB 11:01:38
-            </div>
-        </div>
+        <btn slot="extra" small>打开</btn>
       </list-item>
     </list>
   </Page>
