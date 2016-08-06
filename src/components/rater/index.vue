@@ -28,7 +28,7 @@ export default {
       default: false
     }
   },
-  methods: {
+  computed: {
     classes () {
       console.log(this.value)
       return [

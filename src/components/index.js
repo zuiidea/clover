@@ -9,6 +9,8 @@ import Row from './row'
 import Column from './column'
 import Badge from './badge'
 import Rater from './rater'
+import Block from './block'
+import Title from './title'
 import { List, ListItem } from './list/'
 
 const vux = {
@@ -21,7 +23,9 @@ const vux = {
   List,
   ListItem,
   Badge,
-  Rater
+  Rater,
+  Block,
+  Title
 }
 
 module.exports = vux

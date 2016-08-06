@@ -1,7 +1,7 @@
 <template>
   <div :class="'col-'+span">
     <slot></slot>
-  </civ>
+  </div>
 </template>
 
 <script>

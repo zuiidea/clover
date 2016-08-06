@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row" :class="classes">
     <slot></slot>
   </div>
 </template>
@@ -8,6 +8,13 @@
 export default {
   props: {
     gutter: true
+  },
+  computed: {
+    classes () {
+      return [
+        this.gutter ? ' ' : 'no-gutter'
+      ]
+    }
   }
 }
 </script>

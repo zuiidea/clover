@@ -1,8 +1,9 @@
+@import "../core/index";
 /* === Content Block === */
 @contentBlockBorderColor: rgba(0,0,0,0.12);
 .content-block {
   margin: 32px 0;
-  padding: 0 16px;
+  padding: 0 @blockPadding;
   box-sizing: border-box;
 }
 .content-block-title {
@@ -37,8 +38,8 @@
   }
 }
 .content-block.inset {
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: @blockPadding;
+  margin-right: @blockPadding;
   border-radius: 7px;
   .content-block-inner {
     .hairline-remove(top);
@@ -48,8 +49,8 @@
 }
 @media all and (min-width:768px) {
   .content-block.tablet-inset {
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: @blockPadding;
+    margin-right: @blockPadding;
     border-radius: 4px;
   }
   .content-block.tablet-inset .content-block-inner {

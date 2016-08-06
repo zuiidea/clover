@@ -36,8 +36,6 @@ export default {
   computed: {
     classes () {
       return [
-        {
-        },
         this.type ? `navbar-${this.type}` : ''
       ]
     }
