@@ -7,12 +7,15 @@
 <script>
 export default {
   props: {
-    gutter: true
+    gutter: {
+      type: Boolean,
+      default: false
+    }
   },
   computed: {
     classes () {
       return [
-        this.gutter ? ' ' : 'no-gutter'
+        this.gutter ? '' : 'no-gutter'
       ]
     }
   }

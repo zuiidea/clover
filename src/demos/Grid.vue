@@ -51,42 +51,42 @@
       无间距的列 No gutter between columns
     </title>
     <block>
-      <row>
+      <row gutter>
         <column span="50">50</column>
         <column span="50">50</column>
       </row>
-      <row>
+      <row gutter>
         <column span="25">25</column>
         <column span="25">25</column>
         <column span="25">25</column>
         <column span="25">25</column>
       </row>
-      <row>
+      <row gutter>
         <column span="33">33</column>
         <column span="33">33</column>
         <column span="33">33</column>
       </row>
-      <row>
+      <row gutter>
         <column span="20">20</column>
         <column span="20">20</column>
         <column span="20">20</column>
         <column span="20">20</column>
         <column span="20">20</column>
       </row>
-      <row>
+      <row gutter>
         <column span="33">33</column>
         <column span="66">66</column>
       </row>
-      <row>
+      <row gutter>
         <column span="25">25</column>
         <column span="25">25</column>
         <column span="50">50</column>
       </row>
-      <row>
+      <row gutter>
         <column span="75">75</column>
         <column span="25">25</column>
       </row>
-      <row>
+      <row gutter>
         <column span="80">80</column>
         <column span="20">20</column>
       </row>
