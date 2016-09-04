@@ -1,13 +1,39 @@
 @import "../core/index";
 @import "./bgColor";
+
 .badge {
-    font-size: 10px;
-    display: inline-block;
-    color:#fff;
-    background: #8e8e93;
-    border-radius: 2px;
-    padding: 1px 6px;
+  font-size: 10px;
+  display: inline-block;
+  background: transparent;
+  padding: 2px 6px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  position: relative;
+  .bg-color();
+
+  &.badge-small {
+    font-size: 8px;
+    line-height: 1;
+    vertical-align:middle;
+    white-space: nowrap;
+    padding: 2px 3px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 1px;
+    border-style: solid;
     box-sizing: border-box;
-    vertical-align: middle;
-    .bg-color();
+    border-color: #E0E0E0;
+    width: e("calc(300% - 2px)");
+    height: e("calc(300% - 2px)");
+    border-radius: 3px;
+    -webkit-transform: scale(0.3333);
+    transform: scale(0.3333);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
 }

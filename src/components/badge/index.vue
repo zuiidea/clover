@@ -7,11 +7,20 @@
 <script>
 export default {
   props: {
-    bgColor: String
+    bgColor: {
+      type: String
+    },
+    small: {
+      type: Boolean,
+      default: false
+    }
   },
   computed: {
     classes () {
       return [
+        {
+          'badge-small': this.small
+        },
         this.color ? `bg-${this.bgColor}` : ''
       ]
     }

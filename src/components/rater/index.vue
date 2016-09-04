@@ -2,8 +2,7 @@
   <div class="rater" :class="classes">
     <template  v-for="i in value">
       <span class="active">{{star}}</span>
-    </template>
-    <template  v-for="i in max - value">
+    </template><template  v-for="i in max - value">
       <span>{{star}}</span>
     </template>
   </div>
