@@ -162,14 +162,14 @@
     </div>
     <list media>
       <list-item>
-        <icon slot="media" link="http://oa5auszt6.bkt.clouddn.com/com.tencent.mm.png" radius size="61"></icon>
+        <icon slot="media" link="http://oa5auszt6.bkt.clouddn.com/com.tencent.mm.png" radius size="52"></icon>
         <div class="item-title-row">
           <div class="item-title">
             微信
           </div>
         </div>
         <div class="item-text">
-         <rater :value="4" small>
+         6666<rater :value="4" small>影音视听
         </div>
         <div class="item-text">
          社交聊天 46.9M
@@ -178,7 +178,7 @@
       </list-item>
       <list-item>
         <div slot="media">
-          <icon link="http://oa5auszt6.bkt.clouddn.com/com.taobao.taobao.png" radius size="61">
+          <icon link="http://oa5auszt6.bkt.clouddn.com/com.taobao.taobao.png" radius size="52">
         </div>
         <div class="item-title-row">
           <div class="item-title">
@@ -195,7 +195,7 @@
       </list-item>
       <list-item>
         <div slot="media">
-          <icon link="http://oa5auszt6.bkt.clouddn.com/com.sina.weibo.png" radius size="61">
+          <icon link="http://oa5auszt6.bkt.clouddn.com/com.sina.weibo.png" radius size="52">
         </div>
         <div class="item-title-row">
           <div class="item-title">
@@ -212,7 +212,7 @@
       </list-item>
       <list-item>
         <div slot="media">
-          <icon link="http://oa5auszt6.bkt.clouddn.com/com.android.music.png" radius size="61">
+          <icon link="http://oa5auszt6.bkt.clouddn.com/com.android.music.png" radius size="52">
         </div>
         <div class="item-title-row">
           <div class="item-title">

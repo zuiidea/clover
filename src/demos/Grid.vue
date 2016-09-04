@@ -4,7 +4,7 @@
         栅格
     </Navbar>
     <title>
-      有间距的列 Columns with gutter
+      无间距的列 No gutter between columns
     </title>
     <block>
       <row>
@@ -48,7 +48,7 @@
       </row>
     </block>
     <title>
-      无间距的列 No gutter between columns
+      有间距的列 Columns with gutter
     </title>
     <block>
       <row gutter>
@@ -129,10 +129,10 @@ export default {
      left: 0;
      border: solid 1px #bec0bf;
      box-sizing: border-box;
-     width: 200%;
-     height: 200%;
-     transform: scale(0.5);
-     transform-origin: left top;
+     width: e("calc(300% - 2px)");
+     height: e("calc(300% - 2px)");
+     transform: scale(0.3333);
+     transform-origin: 0 0;
    }
  }
 </style>
