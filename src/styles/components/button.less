@@ -36,15 +36,12 @@
     left: 0;
     border-width:1px;
     border-style: solid;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 200%;
-    height: 200%;
-    border-radius: 4px;
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-    -webkit-transform-origin: left top;
-    transform-origin: left top;
+    width: e("calc(300% - 2px)");
+    height: e("calc(300% - 2px)");
+    border-radius: 6px;
+    transform: scale(0.3333);
+    transform-origin: 0 0;
   }
   &:not([disabled]):active {
       background-image: none;
@@ -61,9 +58,9 @@
   }
   // size
   &.button-small {
-    height: 30px;
-    line-height: 30px;
-    font-size: 10px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
     padding: 0 18px;
     &:after{
       border-radius: 2px;
@@ -109,9 +106,8 @@
   }
   // radius
   &.button-radius{
-    border-radius: 20px;
     &::after{
-      border-radius: 40px;
+      border-radius: 80px;
     }
   }
   // fluid
@@ -137,9 +133,9 @@
      background: darken(#fff, 20%);
    }
    &.button-small {
-     height: 26px;
-     width: 26px;
-     line-height: 26px;
+     height: 27px;
+     width: 27px;
+     line-height: 27px;
    }
   }
 }
