@@ -1,4 +1,4 @@
-<template>
+template>
   <span class="badge" :class="classes">
     <slot></slot>
   </span>

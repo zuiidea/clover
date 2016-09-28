@@ -64,3 +64,7 @@ export default {
   }
 }
 </script>
+
+<style lang="less">
+  @import "../../styles/components/button";
+</style>
