@@ -1,4 +1,5 @@
 <template>
+ <div class="page">
   <Page>
   <Navbar type="secondary" slot="navbar">
       按钮 btn
@@ -75,6 +76,7 @@
     </p>
   </div>
   </Page>
+ </div>
 </template>
 
 <script>

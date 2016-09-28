@@ -17,9 +17,9 @@
 </template>
 
 <script>
-import Device from './libs/device.js'
+// import Device from './libs/device.js'
 const version = require('../package.json').version
-Device()
+// Device()
 export default {
   data () {
     return {

@@ -1,10 +1,13 @@
 <template>
-  <div class="page" :class="classes">
+ <div class="page">
+  <div class="" :class="classes">
     <slot name="navbar"></slot>
     <div class="page-content">
      <slot></slot>
     </div>
   </div>
+ </div>
+
 </template>
 
 <script>

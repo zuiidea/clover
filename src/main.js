@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Device from './libs/device'
+// import Device from './libs/device'
+import Clover from './clover'
+import FastClick from 'fastclick'
 import Home from './Home'
 import Index from './Index'
 import Demo from './demos/Demo'
@@ -13,18 +15,20 @@ import Badge from './demos/Badge'
 import Rater from './demos/Rater'
 
 Vue.use(Router)
+Vue.use(Clover)
 var App = Vue.extend({})
 var router = new Router()
-var device = Device()
+// var device = Device()
 
 router.map({
   '/': {
     component: function (resolve) {
-      if (device.pc) {
-        resolve(Index)
-      } else {
-        resolve(Demo)
-      }
+      resolve(Demo)
+      // if (device.pc) {
+      //   resolve(Index)
+      // } else {
+      //   resolve(Demo)
+      // }
     }
   },
   '/home': {
@@ -60,3 +64,7 @@ router.map({
 })
 
 router.start(App, '#app')
+
+Clover.router(router)
+
+FastClick.attach(document.body)
