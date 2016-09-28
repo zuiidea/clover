@@ -1,6 +1,4 @@
-/* only for building vux.css */
-import Style from '../styles/index.vue' // eslint-disable-line
-
+import '../styles/index.vue'
 import Btn from './btn'
 import Icon from './icon'
 import Navbar from './navbar'
@@ -11,9 +9,10 @@ import Badge from './badge'
 import Rater from './rater'
 import Block from './block'
 import Title from './title'
+import Content from './content'
 import { List, ListItem } from './list/'
 
-const vux = {
+const clover = {
   Btn,
   Navbar,
   Icon,
@@ -25,7 +24,8 @@ const vux = {
   Badge,
   Rater,
   Block,
+  Content,
   Title
 }
 
-module.exports = vux
+module.exports = clover

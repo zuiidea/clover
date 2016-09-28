@@ -1,8 +1,9 @@
 <template>
-  <Page>
-    <Navbar type="secondary" slot="navbar">
-        列表 list
-    </Navbar>
+ <div class="page">
+  <Navbar type="secondary" slot="navbar">
+      列表 list
+  </Navbar>
+  <Content>
     <div class="content-block-title">
       默认 Default
     </div>
@@ -228,11 +229,12 @@
         <btn slot="extra" small>打开</btn>
       </list-item>
     </list>
-  </Page>
+  </Content>
+ </div>
 </template>
 
 <script>
-import { List, ListItem, Btn, Icon, Badge, Page, Navbar, Rater } from '../components'
+import { List, ListItem, Btn, Icon, Badge, Content, Navbar, Rater } from '../components'
 
 export default {
   components: {
@@ -241,7 +243,7 @@ export default {
     Btn,
     Icon,
     Badge,
-    Page,
+    Content,
     Navbar,
     Rater
   }

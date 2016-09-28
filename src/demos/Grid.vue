@@ -1,8 +1,9 @@
 <template>
-  <Page>
-    <Navbar type="secondary" slot="navbar">
-        栅格
-    </Navbar>
+ <div class="page">
+  <Navbar type="secondary" slot="navbar">
+      栅格
+  </Navbar>
+  <Content>
     <title>
       无间距的列 No gutter between columns
     </title>
@@ -91,15 +92,16 @@
         <column span="20">20</column>
       </row>
     </block>
-  </Page>
+  </Content>
+ </div>
 </template>
 
 <script>
-import { Row, Column, Page, Navbar, Block, Title } from '../components'
+import { Row, Column, Content, Navbar, Block, Title } from '../components'
 export default {
   components: {
     Row,
-    Page,
+    Content,
     Column,
     Navbar,
     Block,

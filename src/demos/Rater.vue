@@ -1,5 +1,6 @@
 <template>
-  <Page>
+ <div class="page">
+  <Content>
     <div class="content-block-title">
       Rater
     </div>
@@ -14,16 +15,16 @@
     <div class="content-block-title">
       No gutter between columns
     </div>
-
-  </Page>
+  </Content>
+ </div>
 </template>
 
 <script>
-import { Row, Column, Page, Rater } from '../components'
+import { Row, Column, Content, Rater } from '../components'
 export default {
   components: {
     Row,
-    Page,
+    Content,
     Column,
     Rater
   }

@@ -1,5 +1,6 @@
 <template>
-  <Page :navbar-fixed="false">
+ <div class="page">
+  <Content>
     <div class="content-block-title">
       Basic
     </div>
@@ -55,7 +56,7 @@
         </li>
       </ul>
       <div class="content-block-title">
-        Page
+        Content
       </div>
       <ul>
         <li>
@@ -148,15 +149,16 @@
 
         </ul>
     </div>
-  </Page>
+  </Content>
+ </div>
 </template>
 
 <script>
-import { Icon, Page } from '../components'
+import { Icon, Content } from '../components'
 export default {
   components: {
     Icon,
-    Page
+    Content
   }
 }
 </script>

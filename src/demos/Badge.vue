@@ -1,8 +1,9 @@
 <template>
-  <Page>
-    <div class="content-block-title">
-      默认 Default
-    </div>
+ <div class="page">
+  <div class="content-block-title">
+    默认 Default
+  </div>
+  <Content>
     <list>
       <list-item>
         <div slot="media">
@@ -15,7 +16,8 @@
        <badge>New</badge>
       </div>
       </list-item>
-  </Page>
+  </Content>
+ </div>
 </template>
 
 <script>
