@@ -1,4 +1,4 @@
-<style scoped lang="less">
+<style lang="less">
 @import './styles/normalize.css';
 @import './styles/home.less';
 </style>
@@ -17,9 +17,9 @@
 </template>
 
 <script>
-// import Device from './libs/device.js'
+import Device from './libs/device.js'
 const version = require('../package.json').version
-// Device()
+Device()
 export default {
   data () {
     return {
