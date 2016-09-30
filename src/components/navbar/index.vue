@@ -51,5 +51,15 @@ export default {
 </script>
 
 <style lang="less">
+  @import "../../styles/core/vars";
   @import "../../styles/components/navbar";
+  .navbar{
+   .navbar-inner{
+    .center{
+     .icon{
+      color: @gray;
+     }
+    }
+   }
+  }
 </style>

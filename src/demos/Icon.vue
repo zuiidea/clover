@@ -1,129 +1,88 @@
 <template>
- <div class="page">
+<div class="page">
   <Navbar type="secondary" slot="navbar">
-      图标
+    图标
   </Navbar>
   <Content>
     <div class="content-block">
       <div class="row">
         <div class="col-20">
-          <btn>
-           <icon type="up"></icon>
-          </btn>
+          <icon type="up"></icon>
         </div>
         <div class="col-20">
-          <btn>
-           <icon type="down"></icon>
-          </btn>
+          <icon type="down"></icon>
         </div>
         <div class="col-20">
-          <btn>
-           <icon type="right"></icon>
-          </btn>
+          <icon type="right"></icon>
         </div>
         <div class="col-20">
-          <btn>
-           <icon type="left"></icon>
-          </btn>
+          <icon type="left"></icon>
         </div>
         <div class="col-20">
-          <btn>
-           <icon type="wifi01"></icon>
-          </btn>
+          <icon type="wifi"></icon>
         </div>
       </div>
       <div class="row">
         <div class="col-20">
-          <btn>
-           <icon type="accountsecuriyt"></icon>
-          </btn>
+          <icon type="notice"></icon>
         </div>
         <div class="col-20">
-          <btn>
-           <icon type="addpo"></icon>
-          </btn>
+          <icon type="search"></icon>
         </div>
         <div class="col-20">
-          <btn>
-           <icon type="my"></icon>
-          </btn>
+          <icon type="reload"></icon>
         </div>
         <div class="col-20">
-          <btn>
-           <icon type="delete"></icon>
-          </btn>
+          <icon type="document"></icon>
         </div>
         <div class="col-20">
-          <btn>
-           <icon type="love"></icon>
-          </btn>
+          <icon type="file"></icon>
         </div>
       </div>
       <div class="row">
         <div class="col-20">
-          <btn>
-           <icon type="star"></icon>
-          </btn>
+          <icon type="star"></icon>
         </div>
         <div class="col-20">
-          <btn>
-           <icon type="map"></icon>
-          </btn>
+          <icon type="voice"></icon>
         </div>
         <div class="col-20">
-          <btn>
-           <icon type="check"></icon>
-          </btn>
+          <icon type="sound"></icon>
         </div>
         <div class="col-20">
-          <btn>
-           <icon type="lock"></icon>
-          </btn>
+          <icon type="unsound"></icon>
         </div>
         <div class="col-20">
-          <btn>
-           <icon type="share"></icon>
-          </btn>
+          <icon type="share"></icon>
         </div>
       </div>
       <div class="row">
         <div class="col-20">
-          <btn>
-           <icon type="more"></icon>
-          </btn>
+          <icon type="reply"></icon>
         </div>
         <div class="col-20">
-          <btn>
-           <icon type="microphone"></icon>
-          </btn>
+          <icon type="location"></icon>
         </div>
         <div class="col-20">
-          <btn>
-           <icon type="send"></icon>
-          </btn>
+          <icon type="send"></icon>
         </div>
         <div class="col-20">
-          <btn>
-           <icon type="cross"></icon>
-          </btn>
+          <icon type="check"></icon>
         </div>
         <div class="col-20">
-          <btn>
-           <icon type="filter"></icon>
-          </btn>
+          <icon type="wifi"></icon>
         </div>
       </div>
     </div>
   </Content>
- </div>
+</div>
 </template>
 
 <script>
-import { Icon, Btn, Navbar, Content } from '../components'
+import { Icon, Navbar, Content } from '../components'
 export default {
   components: {
     Icon,
-    Btn,
     Navbar,
     Content
   }

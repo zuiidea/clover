@@ -10,7 +10,7 @@
           <a v-link="{ path: '/component/btn' }" class="item-link">
             <div class="item-content">
               <div class="item-media icon-media bg-cyan">
-                <Icon type="star"></Icon>
+                <icon type="star"></icon>
               </div>
               <div class="item-inner">
                 <div class="item-title">按钮 Button</div>
@@ -22,7 +22,7 @@
           <a v-link="{ path: '/component/icon' }" class="item-link">
             <div class="item-content">
               <div class="item-media icon-media bg-yellow">
-                <Icon type="love"></Icon>
+                <icon type="file"></icon>
               </div>
               <div class="item-inner">
                 <div class="item-title">图标 Icon</div>
@@ -33,8 +33,8 @@
         <li>
           <a  v-link="{ path: '/component/grid' }" class="item-link">
             <div class="item-content">
-              <div class="item-media icon-media">
-                <Icon type="send"></Icon>
+              <div class="item-media icon-media  bg-blue">
+                <icon type="voice"></icon>
               </div>
               <div class="item-inner">
                 <div class="item-title">网格 Grid</div>
@@ -46,7 +46,7 @@
           <a  v-link="{ path: '/component/list' }" class="item-link">
             <div class="item-content">
               <div class="item-media icon-media">
-                <Icon type="send"></Icon>
+                <icon type="sound"></icon>
               </div>
               <div class="item-inner">
                 <div class="item-title">列表 List</div>
@@ -63,7 +63,7 @@
           <a v-link="{ path: '/component/navbar' }" class="item-link">
             <div class="item-content">
               <div class="item-media icon-media bg-cyan">
-                <Icon type="star"></Icon>
+                <icon type="comment"></icon>
               </div>
               <div class="item-inner">
                 <div class="item-title">顶部 Navbar</div>
@@ -81,7 +81,7 @@
             <a  class="item-link">
               <div class="item-content">
                 <div class="item-media icon-media bg-cyan">
-                  <Icon type="star"></Icon>
+                  <icon type="reply"></icon>
                 </div>
                 <div class="item-inner">
                   <div class="item-title">上传 Upload</div>
@@ -93,7 +93,7 @@
             <a  class="item-link">
               <div class="item-content">
                 <div class="item-media icon-media bg-blue">
-                  <Icon type="love"></Icon>
+                  <icon type="document"></icon>
                 </div>
                 <div class="item-inner">
                   <div class="item-title">开关 Switch</div>
@@ -105,12 +105,11 @@
             <a class="item-link">
               <div class="item-content">
                 <div class="item-media icon-media bg-yellow">
-                  <Icon type="send"></Icon>
+                  <icon type="send"></icon>
                 </div>
                 <div class="item-inner">
                   <div class="item-title">输入框 Input</div>
                   <div class="item-after">
-
                   </div>
                 </div>
               </div>
@@ -120,12 +119,11 @@
             <a class="item-link">
               <div class="item-content">
                 <div class="item-media icon-media bg-cyan">
-                  <Icon type="send"></Icon>
+                  <icon type="send"></icon>
                 </div>
                 <div class="item-inner">
                   <div class="item-title">范围 Range</div>
                   <div class="item-after">
-
                   </div>
                 </div>
               </div>
@@ -135,18 +133,16 @@
             <a class="item-link">
               <div class="item-content">
                 <div class="item-media icon-media bg-blue">
-                  <Icon type="send"></Icon>
+                  <icon type="send"></icon>
                 </div>
                 <div class="item-inner">
                   <div class="item-title">单选框 Radio</div>
                   <div class="item-after">
-
                   </div>
                 </div>
               </div>
             </a>
           </li>
-
         </ul>
     </div>
   </Content>
@@ -172,6 +168,8 @@ export default {
       height:21px;
       border-radius: 50%;
       background-color: @gray;
+      font-size: 12px;
+      line-height: 21px;
     }
     .icon{
       margin:0 auto;

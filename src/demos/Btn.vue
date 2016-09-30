@@ -44,9 +44,9 @@
      <btn icon="down"></btn>
      <btn icon="right"></btn>
      <btn icon="left"></btn>
-     <btn icon="wifi01"></btn>
-     <btn icon="cross"></btn>
-     <btn icon="more"></btn>
+     <btn icon="wifi"></btn>
+     <btn icon="comment"></btn>
+     <btn icon="send"></btn>
      <btn icon="share"></btn>
    </div>
 
