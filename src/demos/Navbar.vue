@@ -9,30 +9,22 @@
    </div>
    <Navbar class="demo">
      <div slot="left">
-       <btn icon small>
-         <icon type="filter"></icon>
-       </btn>
+       <btn icon="send" small></btn>
      </div>
      标题
      <div slot="right">
-       <btn icon small>
-        <icon type="cross"></icon>
-       </btn>
+      <btn icon="send" small></btn>
      </div>
    </Navbar>
    <Navbar class="demo">
         <div>标题</div>
        <div slot="right">
-         <btn icon small>
-          <icon type="cross"></icon>
-         </btn>
+        <btn icon="send" small></btn>
        </div>
    </Navbar>
    <Navbar class="demo">
      <div slot="left">
-       <btn icon small>
-         <icon type="filter"></icon>
-       </btn>
+      <btn icon="send" small></btn>
      </div>
       标题
    </Navbar>
@@ -53,15 +45,11 @@
    </div>
    <Navbar type="tab" class="demo">
      <div slot="left">
-       <btn icon small>
-         <icon type="filter"></icon>
-       </btn>
+      <btn icon="send" small></btn>
      </div>
      标题
      <div slot="right">
-       <btn icon small>
-        <icon type="cross"></icon>
-       </btn>
+      <btn icon="send" small></btn>
      </div>
    </Navbar>
   </Content>

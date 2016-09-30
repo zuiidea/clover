@@ -10,7 +10,7 @@
     <list>
       <list-item>
         <div slot="media">
-          <icon type="my">
+          <icon type="star">
         </div>
       <div class="item-title">
         Ivan Petrov
@@ -21,7 +21,7 @@
       </list-item>
       <list-item link>
         <div slot="media">
-          <icon type="my">
+          <icon type="send">
         </div>
       <div class="item-title">
         Ivan Petrov
