@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Device from './libs/device'
+// import Device from './libs/device'
 import Clover from './clover'
 import FastClick from 'fastclick'
 import Home from './Home'
@@ -18,17 +18,17 @@ Vue.use(Router)
 Vue.use(Clover)
 var App = Vue.extend({})
 var router = new Router()
-var device = Device()
+// var device = Device()
 
 router.map({
   '/': {
     component: function (resolve) {
-      // resolve(Demo)
-      if (device.pc) {
-        resolve(Index)
-      } else {
-        resolve(Demo)
-      }
+      resolve(Demo)
+      // if (device.pc) {
+      //   resolve(Index)
+      // } else {
+      //   resolve(Demo)
+      // }
     }
   },
   '/home': {
