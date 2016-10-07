@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+// import VueTouch from 'vue-touche'
 // import Device from './libs/device'
 import Clover from './clover'
 import FastClick from 'fastclick'
